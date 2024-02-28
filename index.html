@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact List</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <main>
+
+            <nav>
+                <div class="nav-container" id="search-elements">
+                    <input type="text" name="search-bar" id="search-bar"/>
+                    <i id="sort-icon" class="fas fa-sort-alpha-down"></i>
+                    
+                    <select id="dropdown-menu" name="options">
+                        <option value="name">Name</option>
+                        <option value="phone">Number</option>
+                        <option value="email">Email</option>
+                    </select>
+                </div>
+                <div class="nav-container" id="config-elements">
+                    <i id="add-icon" class="fas fa-plus"></i>
+                    <i id="config-icon" class="fas fa-cog"></i>
+                </div>
+            </nav>
+
+            <section id="modify-entry" class="entry-menu">
+                <h1>Modify entry</h1>
+
+                <fieldset>
+                    <div class="entry-div">
+                        <label for="edit-name">Name: </label>
+                        <input type="text" id="edit-name" name="" size="10" />
+                    </div>
+                    
+                    <div class="entry-div">
+                        <label for="edit-tel">Number: </label>
+                        <input type="text" id="edit-tel" name="" size="10" />
+                    </div>
+
+                    <div class="entry-div">
+                        <label for="edit-email">Email: </label>
+                        <input type="text" id="edit-email" name="" size="10" /></label>
+                    </div>
+                </fieldset>
+
+                <input id="modify-entry-button" type="submit" value="submit"/>
+                <i id="exit-modify-entry" class="fas fa-times exit-menu"></i>
+            </section>
+
+            <section id="add-entry" class="entry-menu">
+                <h1>Add entry</h1>
+
+                <fieldset>
+                    <div class="entry-div">
+                        <label for="add-name">Name: </label>
+                        <input type="text" id="add-name" name="name" size="10" />
+                    </div>
+                    
+                    <div class="entry-div">
+                        <label for="add-tel">Number: </label>
+                        <input type="text" id="add-tel" name="tel" size="10" />
+                    </div>
+                
+                    <div class="entry-div">
+                        <label for="add-email">Email: </label>
+                        <input type="text" id="add-email" name="email" size="10" />
+                    </div>
+                </fieldset>
+
+                <input id="add-entry-button" type="submit" value="Add"/>
+                <i id="exit-add-entry" class="fas fa-times exit-menu"></i>
+            </section>
+
+            <section id="config-menu" class="entry-menu">
+                <h1>Configurations</h1>
+                
+                <fieldset>
+                    <div class="entry-div">
+                        <label for="update-font">Font: </label>
+                            <select name="update-font" id="update-font">
+                                <option value="sans-serif">Sans-serif</option>
+                                <option value="serif">Serif</option>
+                                <option value="monospace">Monospace</option>
+                                <option value="cursive ">Cursive </option>
+                                <option value="fantasy ">Fantasy </option>
+                            </select>
+                    </div>
+                    
+                    <div class="entry-div">
+                        <label for="update-size">Size: </label>
+                        <input type="number" id="update-size" name="update-size" size="10" />
+                    </div>
+
+                    <button id="config-button">Change</button>
+                    <i id="exit-config" class="fas fa-times exit-menu"></i>
+                </fieldset>
+            </section>
+
+            <section id="entries">
+            </section>
+
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
